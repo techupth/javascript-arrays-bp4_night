@@ -42,10 +42,10 @@ let orders = [
 ];
 
 // Start coding here
-let isArray = orders
-let creditCardTypeOfBlindermann = orders[2]
+let isArray = Array.isArray(orders)
+let creditCardTypeOfBlindermann = orders[2].creditCardType
 orders[2].creditCardType = "visa"
-let productQuantityOfJoannet = orders[3]
-let totalPurchaseOfDary = orders[1].productPrice*orders[1].productQuantity
+let productQuantityOfJoannet = orders[3].productQuantity
+let totalPurchaseOfDary = orders[1].productPrice * orders[1].productQuantity
 delete orders[0]
 console.log(orders)
